@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <!--
+        
+    ASD-170 Final Project
+    Author: Clint Kline
+    Date:   10-19-2020
+
+    Filename: products.html
+   -->
+   
+   <meta charset="utf-8" />
+   <title>Homewood Snowboards Products</title>
+   <link href="reset.css" rel="stylesheet" media="all" />
+   <link href="style.css" rel="stylesheet" media="all" />
+   <link href="layout.css" rel="stylesheet" media="screen" />
+   <link href="slideshow.css" rel="stylesheet" media="screen" />
+   <script src="JSslideshow.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container"><img class="logo" src="images/logo.png" alt="logo"></h1></div>
+        <div><img id="title" src="images/hw_title.png"></h1></div>
+        <div class="row">
+            <nav id="horizontal">
+            <ul>
+                <li><a href="index.html" alt="">Home</a></li>
+                <li><a href="about.html" alt="">About</a></li>
+                <li><a href="products.html" alt="">Products</a></li>
+                <li><a href="shop.html" alt="">Shop</a></li>
+                <li><a href="contact.html" alt="">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- slideshow start -->
+
+    <div class="slideshow-container">
+        
+        <div class="slideshow-inner">
+        
+          <div class="mySlides fade">
+            <img  src='images/image1-2.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image6-2.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image8-2.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image9-2.jpg' style='width: 100%;' alt="pelican"/>
+          </div>
+          
+        </div>
+        
+        
+          <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+          <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+      </div>
+    
+      <br/>
+        
+      <div>    
+        <div style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
+    </div>
+  
+    <!-- slideshow end -->
+   
+    <section id="products" class="main row">
+        <figure class="item">
+        <h1>The Shining Cat</h1>
+            <img src="images/shiningcat.png" href="shiningcatsummary.html"></a>
+            <p>Poppy Park Board</p>
+        </figure>
+        <figure class="item">
+        <h1>Sunday's Best</h1>
+            <img src="images/sundaysbest.png" href="sundaysbestsummary.html"></a>
+            <p>All Around Ripper</p>
+        </figure>
+    </section>
+       
+        
+    <aside id="prodlist" class="row">
+        <h1>Product List</h1>
+            <ul>
+            <li><a href="shiningcatsummary.html" alt="The Shining Cat">The Shining Cat</a></li>
+            <li><a href="sundaysbestsummary.html" alt="Sunday's Best">Sunday's Best</a></li>
+            </ul>
+    </aside>
+    
+   
+
+    
+    <footer>
+        <h3>Homewood Snowboards &copy; 2020</h3>
+    </footer>
+  
+ </body>
+ </html>

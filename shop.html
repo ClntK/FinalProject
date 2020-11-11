@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <!--
+        
+    ASD-170 Final Project
+    Author: Clint Kline
+    Date:   10-19-2020
+
+    Filename: shop.html
+   -->
+   
+   <meta charset="utf-8" />
+   <title>Homewood Snowboards shop</title>
+   <link href="reset.css" rel="stylesheet" media="all" />
+   <link href="style.css" rel="stylesheet" media="all" />
+   <link href="layout.css" rel="stylesheet" media="screen" />
+   <link href="slideshow.css" rel="stylesheet" media="screen" />
+   <script src="JSslideshow.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container"><img class="logo" src="images/logo.png" alt="logo"></h1></div>
+        <div><img id="title" src="images/hw_title.png"></h1></div>
+        <div class="row">
+            <nav id="horizontal">
+            <ul>
+                <li><a href="index.html" alt="">Home</a></li>
+                <li><a href="about.html" alt="">About</a></li>
+                <li><a href="products.html" alt="">Products</a></li>
+                <li><a href="shop.html" alt="">Shop</a></li>
+                <li><a href="contact.html" alt="">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+  <!-- slideshow start -->
+
+    <div class="slideshow-container">
+        
+      <div class="slideshow-inner">
+      
+        <div class="mySlides fade">
+          <img  src='images/image1-2.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
+        </div>
+        
+        <div class="mySlides fade">
+            <img  src='images/image6-2.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+        </div>
+        
+        <div class="mySlides fade">
+            <img  src='images/image8-2.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+        </div>
+        
+        <div class="mySlides fade">
+            <img  src='images/image9-2.jpg' style='width: 100%;' alt="pelican"/>
+        </div>
+        
+      </div>
+      
+      
+        <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+        <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+  
+    <br/>
+      
+    <div>    
+      <div style='text-align: center;'>
+          <span class="dot" onclick='currentSlide(1)'></span>
+          <span class="dot" onclick='currentSlide(2)'></span>
+          <span class="dot" onclick='currentSlide(3)'></span>
+          <span class="dot" onclick='currentSlide(4)'></span>
+      </div>
+  </div>
+
+  <!-- slideshow end -->
+
+  <section id="shop" class="order-row">
+          <div class="col-75">
+            <div class="ofcontainer">
+              <form action="/action_page.php">
+        
+                <div class="row">
+                  <div id="billing" class="col-50">
+                    <h3>Billing Address</h3>
+                    <br>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input id="order" type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input id="order" type="text" id="email" name="email" placeholder="john@example.com">
+                    
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input id="order" type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input id="order" type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input id="order" type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input id="order" type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+        
+                  <div id="payment" class="col-50">
+                    <h3>Payment</h3>
+                    <br>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="cards">
+                      <img id="cards" src="images/Cards.png" alt="cards">
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input id="order" type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input id="order" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input id="order" type="text" id="expmonth" name="expmonth" placeholder="September">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input id="order" type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input id="order" type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+              </form>
+            </div>
+          </div>
+        
+          <div class="col-25">
+            <div class="ofcontainer">
+              <h4>Cart
+                <span class="price" style="color:black">
+                  <i class="fa fa-shopping-cart"></i>
+                  <b>0</b>
+                </span>
+              </h4>
+              <p><a href="#">The Shining Cat</a> <span class="price">$250</span></p>
+              <p><a href="#">Sunday's Best</a> <span class="price">$300</span></p>
+              <hr>
+              <p>Total <span class="price" style="color:black"><b>N/A</b></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+        Homewood Snowboards &copy; 2020
+    </footer>
+ </body>
+ </html>

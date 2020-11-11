@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <!--
+        
+    ASD-170 Final Project
+    Author: Clint Kline
+    Date:   10-19-2020
+
+    Filename: contact.html
+   -->
+   
+   <meta charset="utf-8" />
+   <title>Homewood Snowboards Contact</title>
+   <link href="reset.css" rel="stylesheet" media="all" />
+   <link href="style.css" rel="stylesheet" media="all" />
+   <link href="layout.css" rel="stylesheet" media="screen" />
+   <link href="slideshow.css" rel="stylesheet" media="screen" />
+   <script src="JSslideshow.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container"><img class="logo" src="images/logo.png" alt="logo"></h1></div>
+        <div><img id="title" src="images/hw_title.png"></h1></div>
+        <div class="row">
+            <nav id="horizontal">
+            <ul>
+                <li><a href="index.html" alt="">Home</a></li>
+                <li><a href="about.html" alt="">About</a></li>
+                <li><a href="products.html" alt="">Products</a></li>
+                <li><a href="shop.html" alt="">Shop</a></li>
+                <li><a href="contact.html" alt="">Contact</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- slideshow start -->
+
+    <div class="slideshow-container">
+        
+        <div class="slideshow-inner">
+        
+          <div class="mySlides fade">
+            <img  src='images/image1-2.jpg' style='width: 100%;' alt="sally lightfoot crab"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image6-2.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image8-2.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+          </div>
+          
+          <div class="mySlides fade">
+              <img  src='images/image9-2.jpg' style='width: 100%;' alt="pelican"/>
+          </div>
+          
+        </div>
+        
+        
+          <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+          <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+      </div>
+    
+      <br/>
+        
+      <div>    
+        <div style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
+    </div>
+  
+    <!-- slideshow end -->
+
+    <section id="contact">
+        
+        <form id="contactform" action ="http://example.com.redball.survey" method="post">
+            
+            <fieldset id="custInfo">
+                
+                <legend><h2>Customer Information</h2></legend>
+
+                    <div class="formRow">
+                        <label for="name"><h2>Name*</h2></label>
+                        <input name="custName" id="name" type="text" placeholder="first and last name" required />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="phone"><h2>Phone Number</h2></label> 
+                        <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="mail"><h2>E-mail</h2></label> 
+                        <input name="custEmail" id="mail" type="email" required />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="info"><h2>Where did you hear about us?</h2>
+                            <br /><h2>(select all that apply)</h2>
+                        </label>
+                        
+                        <select name="infoSrc" id="Info" size="5" multiple>
+                            <option value="internet">Internet</option>
+                            <option value="mag">Magazine</option>
+                            <option value="news">Newspaper</option>
+                            <option value="word">Word of Mouth</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br />
+                    
+                    <div class="formRow">
+                        <h2>Your Message:</h2>
+                        <input id="yourmessage" type="text" placeholder="Speak!">
+                    </div>
+                    <br />
+
+                    <input name="mailme" id="mailCB" value="yes" type="checkbox" />
+                    <label for="mailCB">Add me to your mailing list for upcoming sales and tour dates!</label>
+            
+            </fieldset>
+            
+            <div id="buttons">
+                <input type="submit" value="Send it!" />
+                <input type="reset" value="Cancel" />
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        Homewood Snowboards &copy; 2020
+    </footer>
+ </body>
+ </html>
